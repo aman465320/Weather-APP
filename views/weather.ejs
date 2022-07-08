@@ -1,0 +1,73 @@
+<%- include("partials/header"); -%>
+
+    <div class="container-fluid d-grid  text-center rounded"
+        style="height: 100vh; width: 100vw;color: #64e9ee;background-color: #093a3e;">
+        <div class="row">
+            <div class="col-6  d-flex justify-content-center align-items-center m-auto">
+                <%= cityName %>,<%= country %>
+            </div>
+            <div class="col-6   d-flex justify-content-center align-items-center m-auto">
+                Description <br>
+                <%= description %>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6 d-flex justify-content-center align-items-center m-auto"> <img
+                    src=" <%= imageURL %> " alt=""> </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 d-flex justify-content-center align-items-center m-auto">
+                <span></span> Temperature <%= temperature %> &#8451 <br> Feels Like <%= feelsLike %> &#8451
+            </div>
+
+
+            <div class="col-xl-6 col-lg-12 col-md-12" style="height: 100%;">
+                <div class="container-fluid d-grid " style="height: 100%; padding: 0;">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-12 col-md-12 d-flex justify-content-center align-items-center ">
+                            Max Temperature <br>
+                            <%= highTemp %> &#8451
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12 d-flex justify-content-center align-items-center ">
+                            Min Temperature <br>
+                            <%= lowTemp %> &#8451
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-12 col-md-12 d-flex justify-content-center align-items-center ">
+                            Sunrise <br>
+                            <%= sunrise %>
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12 d-flex justify-content-center align-items-center ">
+                            Sunset <br>
+                            <%= sunset %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xl-3 col-lg-12 col-md-12 d-flex justify-content-center align-items-center m-auto">
+                Pressure <br>
+                <%= pressure %> hPa
+            </div>
+            <div class="col-xl-3 col-lg-12 col-md-12 d-flex justify-content-center align-items-center m-auto">
+                Humidity <br>
+                <%= humidity %> %
+            </div>
+            <div class="col-xl-3 col-lg-12 col-md-12 d-flex justify-content-center align-items-center m-auto">
+                Visibility <br>
+                <%= visibility %> meter
+            </div>
+            <div class="col-xl-3 col-lg-12 col-md-12 d-flex justify-content-center align-items-center m-auto">
+                Wind Speed <br>
+                <%= windSpeed %> meter/sec
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+    </html>

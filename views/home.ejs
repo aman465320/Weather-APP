@@ -1,0 +1,25 @@
+<%- include('partials/header'); -%>
+    <div class="d-flex justify-content-center align-items-center flex-wrap">
+
+        <div class="card my-3" style="width: 28rem; border: 2px solid rgb(74, 72, 72);">
+            <div class="card-body" style="padding: 0px;">
+                <img src="images/weather_Card_image.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body text-center py-5" style="background-color: rgb(209, 209, 241);">
+                <h5 class="card-title ">Type a valid City Name</h5>
+                <p class="card-text ">Our weather app provides you the accurate weather conditions of a prticular city
+                </p>
+
+
+                <form action="/" method="post">
+                    <input type="text" name="cityName" id="" placeholder="&#xF002; Enter City Name"
+                        style="border: 1px solid rgb(19, 19, 26); border-radius: 20px; padding: 10px; width: 100%; font-family:Arial, FontAwesome">
+                    <button type="submit" class="btn btn btn-primary my-3">Get Weather Data</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer'); -%>
