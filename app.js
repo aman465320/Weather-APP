@@ -83,6 +83,6 @@ app.get("/weather", (req, res) => {
   res.send();
 });
 
-app.listen(4500 || process.env.PORT, () => {
+app.listen(process.env.PORT || 4500, () => {
   console.log("server started at port 4500");
 });
